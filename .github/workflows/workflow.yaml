@@ -7,8 +7,4 @@ jobs:
       - uses: actions/setup-node@v4
       - run: make setup
       - run: make lint
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - run: make test
